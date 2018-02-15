@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'FinkHeavy';
+    src: url('FinkHeavy.woff2') format('woff2'),
+        url('FinkHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+html {
+
+	background-image: url('images/single_tile.png');
+	background-repeat: repeat;
+
+}
+
+h1 {
+
+	font-family: 'FinkHeavy';
+	text-align: center;
+	font-size: 5em;
+	width: 50%;
+	margin: 0 auto;
+	color: #eebb48;
+	text-shadow: 
+		-1px -1px 0 #523c0a,
+		5px -5px 0 #523c0a,
+		-1px 1px 0 #523c0a,
+		1px 1px 0 #523c0a;
+
+}
