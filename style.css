@@ -192,6 +192,14 @@ img {
 
 	text-align: center;
 	text-decoration: none;
+	font-family: 'FinkHeavy';
+}
+
+.to_home a {
+
+	text-align: center;
+	text-decoration: none;
+	font-family: 'FinkHeavy';
 }
 
 .to_grid, .to_home {
@@ -208,13 +216,14 @@ img {
   display: block;
   position: relative;
   background-color: #eebb48;
-  font-size: 18px;
+  font-size: 2em;
   font-weight: 300px;
   color: white;
   padding: 25px 70px;
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 6px #efa424;
+  font-family: 'FinkHeavy';
 }
 
 .to_grid button:hover {
