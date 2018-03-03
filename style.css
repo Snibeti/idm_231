@@ -20,6 +20,7 @@ h1 {
 	font-size: 5em;
 	width: 50%;
 	padding-top: 5%;
+	padding-bottom: 5%;
 	margin: 0 auto;
 	color: #eebb48;
 	text-shadow: 
@@ -163,6 +164,36 @@ img {
 
 	width: 200px;
 	max-height: 310px;
+}
+
+.control {
+
+	font-size: 2em;
+	padding-top: 80px;
+	width: 40%;
+	text-align: center;
+}
+
+.control {
+
+  outline: none;
+  border:none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  font-size: 2em;
+  font-weight: 300px;
+  padding: 25px 70px;
+  margin: 0 auto;
+  border-radius: 100px;
+  box-shadow: 0 6px #e3e3e3;
+  font-family: 'FinkHeavy';
+}
+
+input.control{
+
+	size: 2em;
 }
 
 .flex-grid-villagers {
