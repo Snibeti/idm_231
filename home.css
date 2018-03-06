@@ -1,0 +1,6 @@
+html {
+
+background: left / 50% no-repeat url("images/tree.png"),
+				right / 45% no-repeat url("images/cedar_tree.png"), 
+				url('images/single_tile.png');
+			}
