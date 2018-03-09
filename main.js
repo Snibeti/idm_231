@@ -52,6 +52,7 @@ if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 0 && whichDayO
   AstroSign = "Dog";
 } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
   AstroSign = "Rooster";
+  window.location = "benedict.html";
 } else if ((whichMonth == 6 && whichDayOfMonth >= 23) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
   AstroSign = "Monkey";
 } else if ((whichMonth == 5 && whichDayOfMonth >= 22) || (whichMonth == 6 && whichDayOfMonth <= 22)) {
