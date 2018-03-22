@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/leaf.png">
+	<title>Julian</title>
+</head>
+<body>
+<h2>Results</h2>
+<div class= "results">
+	
+	<div class="villager"><img src ="images/julian_horse.png"></div>
+
+	<div class="info_text"><h3>Julian</h3><p><i>“Never trot when you can prance.”</i><br><br>Like Julian, you are very polite, kind, and chivalrous. You have a variety of interests, and you like hearing about other people's life stories. However, you're kind of smug so you tend to stroke your ego every so often. Everything does revolve around you after all.</p>
+
+		<div class="to_home">
+		<a href="./index.html"><button type="button">Back Home</button></a>
+	</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/julian.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
+</body>
+</html>

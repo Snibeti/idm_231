@@ -12,7 +12,7 @@
 	
 	<div class="villager"><img src ="images/benedict_rooster.png"></div>
 
-	<div class="info_text"><h3>Benedict</h3><p><i>“Bok bok bok?! Just kidding. A huh huh huh!”</i><br><br>Like Benedict, you are are the perfect combination of sass and a busybody attitude. You love to gossip, but enjoy life's simplest pleasures. People come to you if they're looking for the newest happenings in the town.</p>
+	<div class="info_text"><h3>Benedict</h3><p><i>“Bok bok bok?! Just kidding. A huh huh huh!”</i><br><br>Like Benedict, you are are the perfect combination of sass and a busybody attitude. You love to gossip, but enjoy life's simplest pleasures. People come to you if they're looking for the latest happenings in the town.</p>
 
 		<div class="to_home">
 		<a href="./index.html"><button type="button">Back Home</button></a>
@@ -21,6 +21,13 @@
 </div>
 
 
-	
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/benedict.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
 </body>
 </html>

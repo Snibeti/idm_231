@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/leaf.png">
+	<title>Rasher</title>
+</head>
+<body>
+<h2>Results</h2>
+<div class= "results">
+	
+	<div class="villager"><img src ="images/rasher_pig.png"></div>
+
+	<div class="info_text"><h3>Rasher</h3><p><i>“Don't look at me with those hungry eyes! I'm not a pork chop!”</i><br><br>Like Rasher, you...well you're kind of a weirdo. You tend to say innapropriate things in social situations, and you certainly aren't afraid to say what's on your mind. There's nothing wrong with marching to the beat of your own drum, and you are proud of it!</p>
+
+		<div class="to_home">
+		<a href="./index.html"><button type="button">Back Home</button></a>
+	</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/rasher.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
+</body>
+</html>

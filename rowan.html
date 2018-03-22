@@ -21,6 +21,13 @@
 </div>
 
 
-	
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/rowan.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
 </body>
 </html>

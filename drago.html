@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/leaf.png">
+	<title>Drago</title>
+</head>
+<body>
+<h2>Results</h2>
+<div class= "results">
+	
+	<div class="villager"><img src ="images/drago_dragon.png"></div>
+
+	<div class="info_text"><h3>Drago</h3><p><i>“There's no room for two dragons in one pond.”</i><br><br>Like Drago, you take things entirely too seriously. People are sometimes scared by how intense you can be, but if they get to know you they'll realize you're just another lazy dude that likes blowing bubbles and hanging out...as long as no one ever tries to challenge you. </p>
+
+		<div class="to_home">
+		<a href="./index.html"><button type="button">Back Home</button></a>
+	</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/drago.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
+</body>
+</html>

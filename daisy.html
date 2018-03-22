@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/leaf.png">
+	<title>Daisy</title>
+</head>
+<body>
+<h2>Results</h2>
+<div class= "results">
+	
+	<div class="villager"><img src ="images/daisy_dog.png"></div>
+
+	<div class="info_text"><h3>Daisy</h3><p><i>“Bow-WOW, it's not always a dog-eat-dog world.”</i><br><br>Like Daisy, you're a cute little goofball. You love all things vintage, and love to go thrift shopping. People love having you around to hear your stories, you always have something interesting to say. You're fierce, loving, and an all around dynamite gal.</p>
+
+		<div class="to_home">
+		<a href="./index.html"><button type="button">Back Home</button></a>
+	</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/daisy.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
+</body>
+</html>

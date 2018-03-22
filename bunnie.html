@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/leaf.png">
+	<title>Bunnie</title>
+</head>
+<body>
+<h2>Results</h2>
+<div class= "results">
+	
+	<div class="villager"><img src ="images/bunnie_rabbit.png"></div>
+
+	<div class="info_text"><h3>Bunnie</h3><p><i>“Hare today, gone tomorrow.”</i><br><br>Like Bunnie, you are peppy and full of energy 24/7!! You have the tendency to over react in conversations or go on and on about trivial things. You have no room for 'boring' people, you only care about adventure and new experiences.</p>
+
+		<div class="to_home">
+		<a href="./index.html"><button type="button">Back Home</button></a>
+	</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/bunnie.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
+</body>
+</html>

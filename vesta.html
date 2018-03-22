@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/leaf.png">
+	<title>Vesta</title>
+</head>
+<body>
+<h2>Results</h2>
+<div class= "results">
+	
+	<div class="villager"><img src ="images/vesta_sheep.png"></div>
+
+	<div class="info_text"><h3>Vesta</h3><p><i>“No sweater off my back!”</i><br><br>Like Vesta, you get along with any personality. You care about every living creature, and are constantly told that you're an old soul. Your favorite thing to do is to curl up under a blanket with some warm tea, counting your stitches as it rains outside.</p>
+
+		<div class="to_home">
+		<a href="./index.html"><button type="button">Back Home</button></a>
+	</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/vesta.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
+</body>
+</html>

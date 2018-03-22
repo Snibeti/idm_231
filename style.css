@@ -1,9 +1,10 @@
 @font-face {
     font-family: 'FinkHeavy';
-    src: url('FinkHeavy.woff2') format('woff2'),
-        url('FinkHeavy.woff') format('woff');
-    font-weight: 900;
+    src: url('../fonts/finkheavy_copy-webfont.woff2') format('woff2'),
+         url('../fonts/finkheavy_copy-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+
 }
 
 html {
@@ -157,6 +158,76 @@ h1 {
 }
 
 
+/*---- Help Settings ----*/
+
+#shake {
+
+	max-width: 17%;
+	display: inline;
+	position: absolute;
+	margin-top: 17%;
+	cursor:pointer;
+
+}
+.shaka .tooltiptext {
+    opacity: 1;
+    font-family: 'FinkHeavy';
+    font-size: 1.5em;
+    width: 120px;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 10%;
+    z-index: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.shaka .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.shaka:hover .tooltiptext {
+    opacity: 1;
+}
+
+@-webkit-keyframes lloid_shake {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+#shake:hover,
+#shake:focus {
+	-webkit-animation-name: lloid_shake;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	/*-webkit-animation-iteration-count: 2;*/
+	-webkit-animation-timing-function: linear;
+}
+
+#myForm {
+
+	display: inline;
+}
+
 input {
 
 	padding: 8px;
@@ -183,7 +254,7 @@ input {
   position: relative;
   background-color: #ffffff;
   font-size: 2em;
-  font-weight: 300px;
+  font-weight: 300;
   padding: 25px 70px;
   margin: 0 auto;
   border-radius: 100px;
@@ -199,7 +270,7 @@ input {
 
 input.control{
 
-	size: 2em;
+	font-size: 2em;
 }
 
 .flex-grid-villagers {
@@ -256,7 +327,7 @@ input.control{
 
 .to_grid, .to_home {
 
-	padding-top: 10%;
+	padding-top: 7%;
 	margin: 0 auto;
 	margin-bottom: 4%;
 }
@@ -270,7 +341,7 @@ input.control{
   position: relative;
   background-color: #eebb48;
   font-size: 2em;
-  font-weight: 300px;
+  font-weight: 300;
   color: white;
   padding: 25px 70px;
   margin: 0 auto;
@@ -288,13 +359,25 @@ input.control{
   position: relative;
   background-color: #63a7e8;
   font-size: 1em;
-  font-weight: 300px;
+  font-weight: 300;
   color: white;
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 6px #a3d1f9;
   font-family: 'FinkHeavy';
   padding: 12px 35px;
+}
+
+#submit button:hover {
+
+	box-shadow: 0 4px #a3d1f9;
+	top: 2px;
+}
+
+#submit button:active {
+
+  box-shadow: none;
+  top: 6px;
 }
 
 .to_grid button:hover {
@@ -393,4 +476,81 @@ padding: 25px 70px;
 	margin-left: 12%;
 	margin-right: 12%;
 	margin-bottom: 5%;
+}
+
+.resetti img{
+
+	max-width: 100%;
+	margin-left: -10%;
+}
+
+.info_resetti {
+
+padding: 25px 70px;
+  margin: 0 auto;
+  border-radius: 100px;
+  box-shadow: 0 6px #e3e3e3;
+  font-family: 'FinkHeavy';
+  z-index: 2;
+  background-color: white;
+  background-image:
+    radial-gradient(#eee 15%, transparent 0), 
+    radial-gradient(#eee 15%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  margin-left: 12%;
+  margin-right: -12%;
+
+}
+
+/* Modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    background-image:
+    radial-gradient(#eee 15%, transparent 0), 
+    radial-gradient(#eee 15%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  border-radius: 50px;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+strong {
+
+	font-weight: 600;
+	font-size: 2em;
+	font-family: 'FinkHeavy';
 }

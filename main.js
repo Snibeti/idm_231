@@ -40,36 +40,131 @@
 
 }
 
+
 function astro(whichMonth, whichDayOfMonth) {
-if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 0 && whichDayOfMonth <= 19)) {
-  AstroSign = "Ox";
-} else if ((whichMonth == 10 && whichDayOfMonth >= 22) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
-  AstroSign = "Mouse";
-  window.location = "broccolo.html";
-} else if ((whichMonth == 9 && whichDayOfMonth >= 24) || (whichMonth == 10 && whichDayOfMonth <= 21)) {
-  AstroSign = "Pig";
-} else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 23)) {
-  AstroSign = "Dog";
-} else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
-  AstroSign = "Rooster";
-  window.location = "benedict.html";
-} else if ((whichMonth == 6 && whichDayOfMonth >= 23) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
-  AstroSign = "Monkey";
-} else if ((whichMonth == 5 && whichDayOfMonth >= 22) || (whichMonth == 6 && whichDayOfMonth <= 22)) {
-  AstroSign = "Sheep";
-} else if ((whichMonth == 4 && whichDayOfMonth >= 21) || (whichMonth == 5 && whichDayOfMonth <= 21)) {
-  AstroSign = "Horse";
-} else if ((whichMonth == 3 && whichDayOfMonth >= 20) || (whichMonth == 4 && whichDayOfMonth <= 20)) {
-  AstroSign = "Cat";
-} else if ((whichMonth == 2 && whichDayOfMonth >= 21) || (whichMonth == 3 && whichDayOfMonth <= 19)) {
-  AstroSign = "Dragon";
-} else if ((whichMonth == 1 && whichDayOfMonth >= 19) || (whichMonth == 2 && whichDayOfMonth <= 20)) {
-  AstroSign = "Rabbit";
-} else if ((whichMonth == 0 && whichDayOfMonth >= 20) || (whichMonth == 1 && whichDayOfMonth <= 18)) {
+
+if (whichMonth == 0 && whichDayOfMonth > 31) {
+	window.location = "resetti.html";
+}	
+else if ((whichMonth == 0 && whichDayOfMonth >= 20) || (whichMonth == 1 && whichDayOfMonth <= 18)) {
   AstroSign = "Tiger";
   window.location = "rowan.html";
 }
+else if (whichMonth == 1 && whichDayOfMonth > 29) {
+	window.location = "resetti.html";
+}
+else if ((whichMonth == 1 && whichDayOfMonth >= 19 && whichDayOfMonth <= 29) || (whichMonth == 2 && whichDayOfMonth <= 20)) {
+  AstroSign = "Rabbit";
+  window.location ="bunnie.html";
+}
+else if (whichMonth == 2 && whichDayOfMonth > 31) {
+	window.location = "resetti.html";
+}
+else if ((whichMonth == 2 && whichDayOfMonth >= 21) || (whichMonth == 3 && whichDayOfMonth <= 19)) {
+  AstroSign = "Dragon";
+  window.location ="drago.html";
+}
+
+else if (whichMonth == 3 && whichDayOfMonth > 30) {
+	window.location = "resetti.html";
+}
+
+else if ((whichMonth == 3 && whichDayOfMonth >= 20) || (whichMonth == 4 && whichDayOfMonth <= 20)) {
+  AstroSign = "Cat";
+  window.location ="bob.html";
+} 
+
+else if (whichMonth == 4 && whichDayOfMonth > 31) {
+	window.location = "resetti.html";
+}
+
+ else if ((whichMonth == 4 && whichDayOfMonth >= 21) || (whichMonth == 5 && whichDayOfMonth <= 21)) {
+  AstroSign = "Horse";
+  window.location ="julian.html";
+}
+
+else if (whichMonth == 5 && whichDayOfMonth > 30) {
+	window.location = "resetti.html";
+}
+
+else if ((whichMonth == 5 && whichDayOfMonth >= 22) || (whichMonth == 6 && whichDayOfMonth <= 22)) {
+  AstroSign = "Sheep";
+  window.location ="vesta.html";
+} 
+
+else if (whichMonth == 6 && whichDayOfMonth > 31) {
+	window.location = "resetti.html";
+}
+
+else if ((whichMonth == 6 && whichDayOfMonth >= 23) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
+  AstroSign = "Monkey";
+  window.location ="simon.html";
+} 
+
+else if (whichMonth == 7 && whichDayOfMonth > 31) {
+	window.location = "resetti.html";
+}
+else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
+  AstroSign = "Rooster";
+  window.location = "benedict.html";
+}
+
+else if (whichMonth == 8 && whichDayOfMonth > 30) {
+	window.location = "resetti.html";
+}
+else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 23)) {
+  AstroSign = "Dog";
+  window.location ="daisy.html";
+}
+else if (whichMonth == 9 && whichDayOfMonth > 31) {
+	window.location = "resetti.html";
+}
+else if ((whichMonth == 9 && whichDayOfMonth >= 24) || (whichMonth == 10 && whichDayOfMonth <= 21)) {
+  AstroSign = "Pig";
+  window.location ="rasher.html";
+}
+else if (whichMonth == 10 && whichDayOfMonth > 30) {
+	window.location = "resetti.html";
+}
+else if ((whichMonth == 10 && whichDayOfMonth >= 22) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
+  AstroSign = "Mouse";
+  window.location = "broccolo.html";
+}
+else if (whichMonth == 11 && whichDayOfMonth > 31) {
+	window.location = "resetti.html";
+}
+else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 0 && whichDayOfMonth <= 19)) {
+  AstroSign = "Ox";
+  window.location ="angus.html";
+} 
 
 }
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("shake");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 
 //return astroSign; at the end of the given function

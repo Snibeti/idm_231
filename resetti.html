@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/leaf.png">
+	<title>Error!</title>
+</head>
+<body>
+<h2>Mr. Resetti Says...</h2>
+<div class= "results">
+	
+	<div class="resetti"><img src ="images/resetti.png"></div>
+
+	<div class="info_resetti"><h3>HEY YOU!</h3><p>“Yeah you!! What do you think you're doing, putting in dates all willy-nilly?? We both know, that the date you entered doesn't EXIST!! . . . Please kid, please, make my job easier and put in an actual date next time. If you don't, well, you know i'll be watching you to make sure you do. Now SCRAM!!</p>
+
+		<div class="to_home">
+		<a href="./index.html"><button type="button">I'm sorry!!</button></a>
+	</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script>
+	myAudio = new Audio('music/resetti.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script>
+</body>
+</html>
